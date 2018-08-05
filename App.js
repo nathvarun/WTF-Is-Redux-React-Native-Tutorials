@@ -6,7 +6,8 @@ import {
     TouchableOpacity
 } from "react-native";
 import { createStore } from 'redux'
-
+import CounterApp from './src/CounterApp'
+import { Provider } from 'react-redux'
 /**
  * Store - holds our state - THERE IS ONLY ONE STATE 
  * Action - State can be modified using actions - SIMPLE OBJECTS 
@@ -14,50 +15,37 @@ import { createStore } from 'redux'
  * Reducer - receives the action and modifies the state to give us a new state 
  *  - pure functions 
  *  - only mandatory argument is the 'type' 
- * Subscriber - listens for state change to update the ui (using connect) 
+ * Subscriber - listens for state change to update the ui  
  */
 const initialState = {
     counter: 0
 }
-const reducer = (state = initialState) => {
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
+        case 'INCREASE_COUNTER':
+            return { counter: state.counter + 1 }
+        case 'DECREASE_COUNTER':
+            return { counter: state.counter - 1 }
+    }
     return state
 }
-
 
 const store = createStore(reducer)
 
 class App extends Component {
 
-    state = {
-        counter: 0
-    }
-
-    increaseCounter = () => {
-        this.setState({ counter: this.state.counter + 1 })
-
-    }
-    decreaseCounter = () => {
-        this.setState({ counter: this.state.counter - 1 })
-
-    }
-
     render() {
         return (
-            <View style={styles.container}>
-                <View style={{ flexDirection: 'row', width: 200, justifyContent: 'space-around' }}>
-                    <TouchableOpacity onPress={() => this.increaseCounter()}>
-                        <Text style={{ fontSize: 20 }}>Increase</Text>
-                    </TouchableOpacity>
-                    <Text style={{ fontSize: 20 }}>{this.state.counter}</Text>
-                    <TouchableOpacity onPress={() => this.decreaseCounter()}>
-                        <Text style={{ fontSize: 20 }}>Decrease</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
+            <Provider store={store}>
+                <CounterApp />
+            </Provider>
         );
     }
 }
-export default App;
+
+export default App
+
+// export default App;
 
 const styles = StyleSheet.create({
     container: {
