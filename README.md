@@ -28,5 +28,6 @@ Project files for React Native Redux Tutorial Files
     - ### To View The 1st Tutorial - Redux Basics
         ```sh
            $ git checkout 1-redux-basics 
+           $ npm install 
         ```
 - That way you can switch between project files of different tutorials!

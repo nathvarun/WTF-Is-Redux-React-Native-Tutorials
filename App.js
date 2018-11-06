@@ -1,23 +1,33 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import TodoApp from './src/TodoApp'
-import store from './src/store'
+import React, { Component } from "react";
+import {
+    View,
+    Text,
+    StyleSheet,
+    TouchableOpacity
+} from "react-native";
+import CounterApp from './src/CounterApp'
 import { Provider } from 'react-redux'
-export default class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <TodoApp />
-      </Provider>
-    );
-  }
+import store from './src/store'
+
+class App extends Component {
+
+    render() {
+        return (
+            <Provider store={store}>
+                <CounterApp />
+            </Provider>
+        );
+    }
 }
 
+export default App
+
+// export default App;
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 });
