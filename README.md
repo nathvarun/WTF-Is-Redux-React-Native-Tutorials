@@ -16,12 +16,17 @@ Project files for React Native Redux Tutorial Files
 - ## Each Tutorial Has its own Branch
     - ### To see all the branches 
         ```sh
-        $ git branch --all
+        $ git branch
         ```
     - ### Expected Output 
         ```sh
-       $ git branch --all
-      * remotes/origin/1-redux-basics
+       $ git branch
+       * 1-redux-basics
+       * 2-TodoApp-Structuring-your-app
+       * 3-TodoApp-UI-CombineReducers
+       * 4-TodoApp-Connect-Dispatch
+       * 5--TodoApp-Action-Creators
+       * 6-Redux-Middleware
 
       ```
     - ### You are currently on the first tutorial branch 1-redux-basics
