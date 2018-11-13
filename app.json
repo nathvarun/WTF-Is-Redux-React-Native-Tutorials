@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "react-native-redux-youtube",
+    "name": "react-native-redux-middleware-youtube",
     "description": "This project is really great.",
-    "slug": "react-native-redux-youtube",
+    "slug": "react-native-redux-middleware-youtube",
     "privacy": "public",
-    "sdkVersion": "29.0.0",
+    "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",

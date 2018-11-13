@@ -27,6 +27,7 @@ $ git branch
 * 4-TodoApp-Connect-Dispatch
 * 5--TodoApp-Action-Creators
 * 6-Redux-Middleware
+* 7-Redux-Thunk
 
 ```
 - ### You are currently on the first tutorial branch 1-redux-basics
