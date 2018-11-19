@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native-redux-middleware-youtube",
+    "name": "react-native-font-size-youtube",
     "description": "This project is really great.",
-    "slug": "react-native-redux-middleware-youtube",
+    "slug": "react-native-font-size-youtube",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
