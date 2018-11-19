@@ -27,6 +27,8 @@ $ git branch
 * 4-TodoApp-Connect-Dispatch
 * 5--TodoApp-Action-Creators
 * 6-Redux-Middleware
+* 7-Redux-Thunk
+* 8-App-wide-font-size
 
 ```
 - ### You are currently on the first tutorial branch 1-redux-basics
