@@ -20,7 +20,7 @@ $ git branch -a
 ```
 - ### Expected Output 
 ```sh
-$ git branch
+$ git branch -a
 * 1-redux-basics
 * 2-TodoApp-Structuring-your-app
 * 3-TodoApp-UI-CombineReducers
