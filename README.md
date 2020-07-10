@@ -16,7 +16,7 @@ $ npm install
 - ## Each Tutorial Has its own Branch
 - ### To see all the branches 
 ```sh
-$ git branch
+$ git branch -a
 ```
 - ### Expected Output 
 ```sh
